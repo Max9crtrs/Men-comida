@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+    box-sizing: content-box;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;/*pusimos una cuadricula en dos de nuestros divs uno con una fraccion y dos fracciones*/
+}
+
+.hero-image img{
+    width: 100%;
+    object-fit: contain;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.dishes{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(210px,1fr)) ;
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
+    column-gap:50px;
+    row-gap: 50px;
+}
+
+.dishes-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dishes-image-big{
+    grid-area: 1/1/3/3;
+}
+
+.plates{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+
+.plates-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.plates-image{
+    background-color: blanchedalmond;
+    padding: 22px;
+    transition-duration: 1000ms;
+}
+
+.plates-image:hover{
+    background-color:brown;
+}
+
+.info-button{
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    background-color: blanchedalmond;
+}
+
+.info-title{
+    text-align: center;
+    text-align: justify;
+}
+p{
+    text-align: center;
+    text-align: justify;
+}
+h2{
+    text-align: center;
+}
+.dishes-image {
+    transition-duration: 1000ms;
+}
+.dishes-image:hover {
+    transform: scale(0.8);
+}
